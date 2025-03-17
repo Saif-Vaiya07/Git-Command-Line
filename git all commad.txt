@@ -83,6 +83,18 @@ git rm --cached <file Name> →   Unstage a file
 
 ~~ Stagging area to loacl repository:-
 
+-(Commiting)
 git commit -m "message" →   For commiting 
 
 git log →   Shows the commit history.
+
+git add <File Name> && git commit -m "commit message" At a time file will go in stagging area and then local repository
+
+-(Uncommiting)
+git reset HEAD^ →   Uncommit a file / file will moved to staging area
+
+git reset --soft HEAD^ →   File will moved to Working directory
+
+git reset --hard HEAD^ →   File will moved to outside of Working directory
+
+
