@@ -88,7 +88,10 @@ git commit -m "message" →   For commiting
 
 git log →   Shows the commit history.
 
+git log --logline →   Shows the commit history in online  
+
 git add <File Name> && git commit -m "commit message" At a time file will go in stagging area and then local repository
+
 
 -(Uncommiting)
 git reset HEAD^ →   Uncommit a file / file will moved to staging area
@@ -98,3 +101,13 @@ git reset --soft HEAD^ →   File will moved to Working directory
 git reset --hard HEAD^ →   File will moved to outside of Working directory
 
 
+-(Commit Jumping)
+git show →   Display the recent (HEAD) commit details
+
+git show <Commmit id 1st-7 character> →    Display the specific commit details based on commit id
+
+git show HEAD~2 →   Display the specific commit detailsby order number  
+
+git checkout <Commmit id> →    To jump a commit based on these commit id
+
+git checkout master →    To return recent commit
