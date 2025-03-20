@@ -88,9 +88,9 @@ git commit -m "message" →   For commiting
 
 git log →   Shows the commit history.
 
-git log --logline →   Shows the commit history in online  
+git log --oneline →   Shows the commit history in online  
 
-git add <File Name> && git commit -m "commit message" At a time file will go in stagging area and then local repository
+git add <File Name> && git commit -m "commit message" →   At a time file will go in stagging area and then local repository
 
 
 -(Uncommiting)
@@ -111,3 +111,18 @@ git show HEAD~2 →   Display the specific commit detailsby order number
 git checkout <Commmit id> →    To jump a commit based on these commit id
 
 git checkout master →    To return recent commit
+
+
+~~.gitignore file
+Ignoring Specific Files: →    secret-config.json 
+
+Ignoring by File Type: →    *.log, *.tmp, *.jason, *.css
+
+Ignoring Directories: →   node_modules/, dist/
+
+Ignoring Files in Subdirectories: →   logs/*.log
+
+Ignoring Everything Except One File: →   dist/*, !dist/index.html
+
+Comments: →   # This is a comment
+
