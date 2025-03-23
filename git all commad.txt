@@ -113,7 +113,7 @@ git checkout <Commmit id> →    To jump a commit based on these commit id
 git checkout master →    To return recent commit
 
 
-~~.gitignore file
+~~[.gitignore file]
 Ignoring Specific Files: →    secret-config.json 
 
 Ignoring by File Type: →    *.log, *.tmp, *.jason, *.css
@@ -126,3 +126,28 @@ Ignoring Everything Except One File: →   dist/*, !dist/index.html
 
 Comments: →   # This is a comment
 
+
+~~[alias => it means shortcurt of git code]
+git config --global alias.(keyword) "property" === git config --global alias.s "status"
+
+for unset 
+git config --global --unset alias.(keyword) === git config --global --unset alias.s
+
+~~Check remote connection: git remote
+git remote -v →   shows the remote along with the url
+
+git remote add name ‹REMOTE_URL> →   Syntax
+
+git remote add origin https://github.com/anisul-lslam/life-story.git →   Example
+
+git remote remove origin →    Remove the Remote
+
+
+~~Branch
+git branch →   Check the all git branches
+
+git branch name(feature1) →  Create new branch
+
+git checkout name(feature1) →  Switch to another branch
+
+git branch -d feature1 →  Delate a branch(but at first we will need to switch another branch)
