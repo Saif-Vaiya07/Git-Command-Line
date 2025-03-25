@@ -1,6 +1,9 @@
 # ~~Basic terminal command:-
 
-#### Lists files and directories in the current directory  `ls `
+#### Lists files and directories in the current directory  
+```
+ls 
+```
 
 ####  Lists all files and directories, including hidden ones  `ls -a/dir -a`
 
