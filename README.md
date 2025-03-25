@@ -1,107 +1,175 @@
- <!-- Markdown Tag -->
+# ~~Basic terminal command:-
 
-hi buddy<br>
-I am Muhammed Saif
+#### Lists files and directories in the current directory  `ls `
 
-hi buddy<!--double space-->  
-I am Muhammed Saif
+####  Lists all files and directories, including hidden ones  `ls -a/dir -a`
 
+#### Changes the current directory `cd <directory> `
 
-horizontal rule 
-<hr>
-  
----
-___
+#### Moves up one directory `cd ..`
 
-# Heading 1
-## Heading 2
+#### Move to root  directory `cd / →  `
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
+#### Prints the current working directory `pwd →  `
 
-Hi my name is Muhammed Saif .I studied in Chitagong University Laboratory College in 1st year. But Beside a student I also be a full-stack web-developer
+#### Creates a new directory `mkdir <directory>`
 
-<p>Hi my name is Muhammed Saif .I studied in Chitagong University Laboratory 
-College in 1st year. But Beside a student I also be a full-stack 
-web-developer
-</p>
+#### Creates a new file → `touch <file>`
 
-<i>Italic text</i>
+#### Removes a file → ` rm <file>`
 
-_Italic Text_  
+#### Removes a directory and its contents → `rm -r <directory>`
 
-__Bold__
+#### Displays the contents of a file → `cat <file>`
 
-___Italic and Bold___  
+#### Using to open a file in terminal → `open (file name)`
 
+<br>
 
-~~Strikethrow~~  
-<del>Strikethrow</del>
+# ~~ SSH Key gentrator command:-
 
-<u>Underline</u>
+## ssh key - 
+First, check if an .ssh directory exists in your local file system. If the directory exists, navigate to it. Otherwise, generate a new SSH key using the following command:
 
-Inline code block  
+#### Generate new ssh key  → `` `ssh-keygen -o -t rsa -C git-hub email`
 
-`npm install`
+<br>  
 
-```html
-<html>
-    <head>
-        <tittle> Tittle </tittle>
-    </head>
-    <body>
-        Hello World
-    </body>
-</html>
+# ~~Git configration command:-
 
-```
-```javascript
-consloe.log('hello world')
-```
+#### For checking the current Git version → `git --version   `
 
-> This is a blockquote.
->> Nested blockquote.
+#### Used when adding a command for all repositories → `--global   `
 
-  
-# Order List 
-1. Item 1
-2. Item 2
-   1. Subitem 2.1
-   2. Subitem 2.2
-3. Item 3
+#### For checking Git configuration → `git config   `
 
+#### gTo set up the configuration name → `it config user.name "your_name"   `
 
-# Unorrder List 
-- Item 1
-- Item 2
-  - Subitem 2.1
-  - Subitem 2.2
-* Item 3
-+ Item 4
+#### To set up the configuration email → `git config user.email "your_email"   `
+
+#### For checking all configuration list items → `git config --list   `
+
+#### For unset property → `git config --global/--local unset (property)   `
+
+<br>
+
+# ~~ Make working directory:- 
+
+#### Creating/Initializes a new Git repository in the current directory →` git init`
+
+#### Clones a remote repository to your local machine →`git clone <repository_url> ` 
 
 
 <br>
 
-- [x] Task 1
-- [ ] Task 2
-- [ ] Task 3
+# ~~ Working directory to stagging are:-
+
+#### Adds a file to the staging area → `git add <file Name> `
+
+#### Stage all changed file in directory and subdirectory → `git add <file Name>`
+
+#### Adds all changes to the staging area → `git add .`
+
+#### Directory wildcard → `git add *.js`
+
+#### Directory & subdirectory wildcard → `git add **/*.js`
+
+#### When a file in stagging state the we will check the diffrence → `git add diff `
+
+#### Checking the staging history → `git status `
+
+#### restore file / jump to previous poistion → `git restore `
+
+#### Unstage a file → `git rm --cached <file Name>` 
+
+<br>
+
+# ~~ Stagging area to loacl repository:-
+
+## - Commiting
+#### For commiting → `git commit -m "message"` 
+
+#### Shows the commit history → `git log` 
+
+#### Shows the commit history in online → `git log --oneline `   
+
+#### At a time file will go in stagging area and then local repository → `git add <File Name> && git commit -m "commit message"` 
 
 
-# automatic Link
-https://www.google.com
+## -Uncommiting
+#### Uncommit a file / file will moved to staging area → `git reset HEAD^`
 
-### disable Link
-`https://www.google.com`
+#### File will moved to Working directory → `git reset --soft HEAD^`
 
-[Facebook](https://www.facebook.com/?_rdr)
+#### →  File will moved to outside of Working directory  → `` `git reset --hard HEAD^ `
 
-## image
-![Profile](image/saif.jpg)
-<img src="image/saif.jpg" width="200px">
 
-| Name | E-mail|
-|------|-------|
-| Muhammed Saif |saifdzu7@gmail.com|
-| Muhammed Saif |saifdzu7@gmail.com|
-| Muhammed Saif |saifdzu7@gmail.com|
-| Muhammed Saif |saifdzu7@gmail.com|
+## - Commit Jumping
+#### Display the recent (HEAD) commit details → `git show  `
+
+#### Display the specific commit details based on commit id → `git show <Commmit id 1st-7 character>`
+
+#### Display the specific commit detailsby order number → `git show HEAD~2`  
+
+#### To jump a commit based on these commit id → `git checkout <Commmit id>`
+
+#### To return recent commit → `git checkout master`
+
+<br>
+
+# ~~[.gitignore file]
+#### Ignoring Specific Files: → `secret-config.json`
+
+#### Ignoring by File Type: → `*.log, *.tmp, *.json, *.css`
+
+#### Ignoring Directories: →`node_modules/, dist/`
+
+#### Ignoring Files in Subdirectories:  → ```logs/*.log`
+
+#### Ignoring Everything Except One File: →`dist/*, !dist/index.html`
+
+#### Comments: →`# This is a comment`
+
+<br>
+
+# ~~Alias
+it means shortcurt of git code
+
+git config --global alias.(keyword) "property" = 
+```
+git config --global alias.s "status"
+```
+
+### - for unset 
+git config --global --unset alias.(keyword) =
+``` 
+git config --global --unset alias.s 
+```
+
+<br>
+
+# ~~Check remote connection: git remote
+#### shows the remote along with the url → `git remote -v`
+
+#### Syntax → `git remote add name ‹REMOTE_URL>`
+
+#### Example → `git remote add origin https://github.com/anisul-lslam/life-story.git`
+
+####  Remove the Remote → `git remote remove origin`
+
+<br>
+
+# ~~Branch
+#### Check the all git branches → `git branch `
+
+#### Create new branch → `git branch name(feature1)`
+
+#### Switch to another branch → `git checkout name(feature1)
+`
+#### Delete a branch (but at first we will need to switch another branch) → `git branch -d feature1`
+
+#### Push code from feature1 → `git push - u origin name(feature1)`
+
+#### At a time create a new branch & automatically switch to this branch → `git checkout -b name(feature2)` 
+
+#### feature2 will be merge with main branch → `git merge name(feature2)`
