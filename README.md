@@ -5,27 +5,60 @@
 ls 
 ```
 
-####  Lists all files and directories, including hidden ones  `ls -a/dir -a`
+####  Lists all files and directories, including hidden ones   
+```
+ls -a/dir -a
+```
 
-#### Changes the current directory `cd <directory> `
+#### Changes the current directory  
+```
+cd <directory> 
+```
 
-#### Moves up one directory `cd ..`
+#### Moves up one directory  
+```
+cd ..
+```
 
-#### Move to root  directory `cd / →  `
+#### Move to root  directory  
+```
+cd / →  
+```
 
-#### Prints the current working directory `pwd →  `
+#### Prints the current working directory 
+```
+pwd →  
+```
 
-#### Creates a new directory `mkdir <directory>`
+#### Creates a new directory  
+```
+mkdir <directory>
+```
 
-#### Creates a new file → `touch <file>`
+#### Creates a new file →  
+```
+touch <file>
+```
 
-#### Removes a file → ` rm <file>`
+#### Removes a file →  
+``` 
+rm <file>
+```
 
-#### Removes a directory and its contents → `rm -r <directory>`
+#### Removes a directory and its contents →  
+```
+rm -r <directory>
+```
 
-#### Displays the contents of a file → `cat <file>`
+#### Displays the contents of a file →  
+```
+cat <file>
+```
 
-#### Using to open a file in terminal → `open (file name)`
+#### Using to open a file in terminal →  
+```
+open (file name)
+```
 
 <br>
 
@@ -34,104 +67,215 @@ ls
 ## ssh key - 
 First, check if an .ssh directory exists in your local file system. If the directory exists, navigate to it. Otherwise, generate a new SSH key using the following command:
 
-#### Generate new ssh key  → `` `ssh-keygen -o -t rsa -C git-hub email`
+#### Generate new ssh key  →   
+```
+ssh-keygen -o -t rsa -C git-hub email
+```
 
 <br>  
 
 # ~~Git configration command:-
 
-#### For checking the current Git version → `git --version   `
+#### For checking the current Git version →  
+```
+git --version  
+```
 
-#### Used when adding a command for all repositories → `--global   `
+#### Used when adding a command for all repositories →  
+```
+--global   
+```
 
-#### For checking Git configuration → `git config   `
+#### For checking Git configuration →  
+```
+git config   
+```
 
-#### gTo set up the configuration name → `it config user.name "your_name"   `
+#### gTo set up the configuration name →  
+```
+it config user.name "your_name"   
+```
 
-#### To set up the configuration email → `git config user.email "your_email"   `
+#### To set up the configuration email →  
+```
+git config user.email "your_email"   
+```
 
-#### For checking all configuration list items → `git config --list   `
+#### For checking all configuration list items →  
+```
+git config --list   
+```
 
-#### For unset property → `git config --global/--local unset (property)   `
+#### For unset property →  
+```
+git config --global/--local unset (property)   
+```
 
 <br>
 
 # ~~ Make working directory:- 
 
-#### Creating/Initializes a new Git repository in the current directory →` git init`
+#### Creating/Initializes a new Git repository in the current directory → 
+```
+git init
+```
 
-#### Clones a remote repository to your local machine →`git clone <repository_url> ` 
+#### Clones a remote repository to your local machine → 
+```
+git clone <repository_url> 
+``` 
 
 
 <br>
 
 # ~~ Working directory to stagging are:-
 
-#### Adds a file to the staging area → `git add <file Name> `
+#### Adds a file to the staging area →  
+```
 
-#### Stage all changed file in directory and subdirectory → `git add <file Name>`
+git add <file Name> 
+```
 
-#### Adds all changes to the staging area → `git add .`
+#### Stage all changed file in directory and subdirectory →  
+```
+git add <file Name>
+```
 
-#### Directory wildcard → `git add *.js`
+#### Adds all changes to the staging area →  
+```
+git add .
+```
 
-#### Directory & subdirectory wildcard → `git add **/*.js`
+#### Directory wildcard →  
+```
+git add *.js
+```
 
-#### When a file in stagging state the we will check the diffrence → `git add diff `
+#### Directory & subdirectory wildcard →  
+```
+git add **/*.js
+```
 
-#### Checking the staging history → `git status `
+#### When a file in stagging state the we will check the diffrence → ` 
+```
+git add diff 
+```
 
-#### restore file / jump to previous poistion → `git restore `
+#### Checking the staging history →  
+``` git status 
+```
 
-#### Unstage a file → `git rm --cached <file Name>` 
+#### restore file / jump to previous poistion → ` 
+```
+git restore 
+```
+
+#### Unstage a file →  
+```
+git rm --cached <file Name>
+``` 
 
 <br>
 
 # ~~ Stagging area to loacl repository:-
 
 ## - Commiting
-#### For commiting → `git commit -m "message"` 
+#### For commiting →  
+```
+git commit -m "message"
+``` 
 
-#### Shows the commit history → `git log` 
+#### Shows the commit history →  
+```
+git log
+``` 
 
-#### Shows the commit history in online → `git log --oneline `   
+#### Shows the commit history in online → ` 
+```
+git log --oneline 
+```   
 
-#### At a time file will go in stagging area and then local repository → `git add <File Name> && git commit -m "commit message"` 
+#### At a time file will go in stagging area and then local repository →  
+```
+git add <File Name> && git commit -m "commit message"
+``` 
 
 
 ## -Uncommiting
-#### Uncommit a file / file will moved to staging area → `git reset HEAD^`
+#### Uncommit a file / file will moved to staging area →  
+```
+git reset HEAD^
+```
 
-#### File will moved to Working directory → `git reset --soft HEAD^`
+#### File will moved to Working directory →  
+```
+git reset --soft HEAD^
+```
 
-#### →  File will moved to outside of Working directory  → `` `git reset --hard HEAD^ `
+#### →  File will moved to outside of Working directory  →  
+```
+git reset --hard HEAD^ 
+```
 
 
 ## - Commit Jumping
-#### Display the recent (HEAD) commit details → `git show  `
+#### Display the recent (HEAD) commit details →  
+```
+git show  
+```
 
-#### Display the specific commit details based on commit id → `git show <Commmit id 1st-7 character>`
+#### Display the specific commit details based on commit id →  
+```
+git show <Commmit id 1st-7 character>
+```
 
-#### Display the specific commit detailsby order number → `git show HEAD~2`  
+#### Display the specific commit detailsby order number →  
+```
+git show HEAD~2
+```  
 
-#### To jump a commit based on these commit id → `git checkout <Commmit id>`
+#### To jump a commit based on these commit id →  
+```
+git checkout <Commmit id>
+```
 
-#### To return recent commit → `git checkout master`
+#### To return recent commit →  
+```
+git checkout master
+```
 
 <br>
 
 # ~~[.gitignore file]
-#### Ignoring Specific Files: → `secret-config.json`
+#### Ignoring Specific Files: →  
+```
+secret-config.json
+```
 
-#### Ignoring by File Type: → `*.log, *.tmp, *.json, *.css`
+#### Ignoring by File Type: →  
+```
+*.log, *.tmp, *.json, *.css
+```
 
-#### Ignoring Directories: →`node_modules/, dist/`
+#### Ignoring Directories: → 
+```
+node_modules/, dist/
+```
 
-#### Ignoring Files in Subdirectories:  → ```logs/*.log`
+#### Ignoring Files in Subdirectories:  →  
+```
+logs/*.log
+```
 
-#### Ignoring Everything Except One File: →`dist/*, !dist/index.html`
+#### Ignoring Everything Except One File: → 
+```
+dist/*, !dist/index.html
+```
 
-#### Comments: →`# This is a comment`
+#### Comments: → 
+```
+# This is an comment
+```
 
 <br>
 
@@ -152,27 +296,60 @@ git config --global --unset alias.s
 <br>
 
 # ~~Check remote connection: git remote
-#### shows the remote along with the url → `git remote -v`
+#### shows the remote along with the url →  
+```
+git remote -v
+```
 
-#### Syntax → `git remote add name ‹REMOTE_URL>`
+#### Syntax →  
+```
+git remote add name ‹REMOTE_URL>
+```
 
-#### Example → `git remote add origin https://github.com/anisul-lslam/life-story.git`
+#### Example →  
+```
+git remote add origin https://github.com/anisul-lslam/life-story.git
+```
 
-####  Remove the Remote → `git remote remove origin`
+####  Remove the Remote →  
+```
+git remote remove origin
+```
 
 <br>
 
 # ~~Branch
-#### Check the all git branches → `git branch `
+#### Check the all git branches → 
+```
+git branch 
+```
 
-#### Create new branch → `git branch name(feature1)`
+#### Create new branch →  
+```
+git branch name(feature1)
+```
 
-#### Switch to another branch → `git checkout name(feature1)
-`
-#### Delete a branch (but at first we will need to switch another branch) → `git branch -d feature1`
+#### Switch to another branch → 
+```
+git checkout name(feature1)
+```
 
-#### Push code from feature1 → `git push - u origin name(feature1)`
+#### Delete a branch (but at first we will need to switch another branch) →  
+```
+git branch -d feature1
+```
 
-#### At a time create a new branch & automatically switch to this branch → `git checkout -b name(feature2)` 
+#### Push code from feature1 →  
+```
+git push - u origin name(feature1)
+```
 
-#### feature2 will be merge with main branch → `git merge name(feature2)`
+#### At a time create a new branch & automatically switch to this branch →  
+```
+git checkout -b name(feature2)
+``` 
+
+#### feature2 will be merge with main branch →  
+```
+git merge name(feature2)
+```
