@@ -353,3 +353,11 @@ git checkout -b name(feature2)
 ```
 git merge name(feature2)
 ```
+#### Command to install Font Awesome (CSS version) →  
+```
+npm install @fortawesome/fontawesome-free
+```
+#### Import in App.jsx (or main.jsx or wherever your root component is): →  
+```
+import '@fortawesome/fontawesome-free/css/all.min.css';
+```
